@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:#F6F9F9 ;
+}
+
+.container{
+    width: 98%;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px; 
+}
+
+.box{
+    padding: 30px;
+    border:1.5px solid black;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+#box-1{
+   background-color: #C0392B;
+}
+
+#box-2{
+    background-color: #3498DB;
+}
+
+#box-3{
+    background-color:#58D68D;
+}
+
+#box-4{
+    background-color: #273746;
+}
+
+/*---------------Smartphones-------------*/
+    
+@media (max-width: 768px){
+    .container{
+        display: block;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .box{
+        margin: 10px;
+    }
+}
+
+/*----------------Tablets-----------------*/
+
+@media (min-width: 769px) and (max-width: 1023px){
+    .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
